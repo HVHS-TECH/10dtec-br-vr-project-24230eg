@@ -8,9 +8,11 @@
   </head>
     <body>
     <a-scene>
+      <a-entity
+      camera look-controls wasd-controls
+      position="0 8 0"
+      ></a-entity>
       <a-sky color="lightblue"></a-sky>
-      
-       <!-- Put this inside the <a-scene> -->
       <a-entity 
       ply-model="src:CASINO 1.0-1-building.ply"
       position="0 0 0"
@@ -30,12 +32,12 @@
       ply-model="src:CASINO 1.0-3-elavator.ply"
       position="0 0 0"
       rotation="-90 0 0"
+      animation="property:position; from:0 0 0; to:0 3.6 0; loop:true; dir:alternate;"
       ></a-entity>
       <a-entity 
       ply-model="src:CASINO 1.0-4-elavator door.ply"
       position="0 0 0"
       rotation="-90 0 0"
-      
       ></a-entity>
                  
     </a-scene>

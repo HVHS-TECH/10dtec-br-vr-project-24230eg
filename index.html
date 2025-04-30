@@ -21,7 +21,10 @@
       animation__8="property:position; from:1 4 2.3; to:2.3 4 2; delay:1000; dur:2000; easing:linear; startEvents: animationcomplete__7;"
       animation__9="property:position; from:2.3 4 2; to:2.3 6 0; delay:1500; dur:4000; easing:linear; startEvents: animationcomplete__8;"
       animation__10="property:position; from:2.3 6 0; to:2 6 -2.5; delay:500; dur:3000; easing:linear; startEvents: animationcomplete__9;"
-      animation__11="property:position; from:2 6 -2.5; to:-2.5 6 -2.5; delay:500; dur:5000; easing:linear; startEvents: animationcomplete__10;"
+      animation__11="property:position; from:2 6 -2.5; to:-2.1 6 -2.5; delay:500; dur:5000; easing:linear; startEvents: animationcomplete__10;"
+      animation__12="property:position; from:-2.1 6 -2.5; to:-2.5 6 -2.5; delay:2000; dur:500; easing:linear; startEvents: animationcomplete__11;"
+      animation__13="property:position; from:-2.5 6 -2.5; to:-2.5 9.5 -2.5; delay:3000; dur:3000; easing:easeInOutSine; startEvents: animationcomplete__12;"
+      animation__14="property:position; from:-2.5 9.5 -2.5; to:-0.75 9.5 0; delay:1000; dur:3000; easing:linear; startEvents: animationcomplete__13;"
 
       ></a-entity>
       <a-sky color="lightblue"></a-sky>
@@ -40,17 +43,19 @@
       <a-entity 
       ply-model="src:Safe 1.0-2-Safe.ply"
       position="0 3.5 0"
-      rotation="-90 -90 0"
+      rotation="-90 -180 0"
       ></a-entity>
       <a-entity 
       ply-model="src:Safe 1.0-1-Door.ply"
       position="0 3.5 0"
-      rotation="-90 -90 0"
+      rotation="-90 -180 0"
+      animation__p="property:position; from:0 3.5 0; to:-0.6 3.5 -0.1; dur:2000; delay:70000;"
+      animation__r="property:rotation; from:-90 -180 0; to:-90 -110; dur:2000; delay:70000;"
       ></a-entity>
       <a-entity 
       ply-model="src:Safe 1.0-0-Gold.ply"
       position="0 3.5 0"
-      rotation="-90 -90 0"
+      rotation="-90 -180 0"
       ></a-entity>
       <a-entity 
       ply-model="src:CASINO 1.0-1-building.ply"
@@ -71,12 +76,13 @@
       ply-model="src:CASINO 1.0-3-elavator.ply"
       position="0 0 0"
       rotation="-90 0 0"
-      animation="property:position; from:0 0 0; to:0 3.6 0; loop:true; dur:3000; dir:alternate; easing:easeInOutSine;"
+      animation="property:position; from:0 0 0; to:0 3.6 0; dur:3000; delay:57000; easing:easeInOutSine;"
       ></a-entity>
       <a-entity 
       ply-model="src:CASINO 1.0-4-elavator door.ply"
       position="0 0 0"
       rotation="-90 0 0"
+      animation="property:position; from:0 0 0; to:0 0 -1; delay:52000; loop:2; dur:2000; dir:alternate; easing:easeInOutSine;"
       ></a-entity>
                  
     </a-scene>

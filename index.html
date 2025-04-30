@@ -9,14 +9,23 @@
     <body>
     <a-scene>
       <a-entity
-      camera look-controls wasd-controls
-      position="0 0 0"
+      camera look-controls
+      position="8 0.4 0"
+      animation__1="property:position; from:8 0.4 0; to:2 0.4 0; delay:15000; dur:5000; easing:linear;"
+      animation__2="property:position; from:2 0.4 0; to:2 0.8 2; delay:500; dur:2500; easing:linear; startEvents: animationcomplete__1;"
+      animation__3="property:position; from:2 0.8 2; to:1.6 1.2 2; dur:1000; easing:linear; startEvents: animationcomplete__2;"
+      animation__4="property:position; from:1.6 1.2 2; to:1.6 1.6 1.6; dur:1000; easing:linear; startEvents: animationcomplete__3;"
+      animation__5="property:position; from:1.6 1.6 1.6; to:2.5 2 1.6; dur:1000; easing:linear; startEvents: animationcomplete__4;"
+      animation__6="property:position; from:2.5 2 1.6; to:2.5 2.5 2.3; delay:1000; dur:1500; easing:linear; startEvents: animationcomplete__5;"
+      animation__7="property:position; from:2.5 2.5 2.3; to:1 4 2.3; delay:2000; dur:2500; easing:linear; startEvents: animationcomplete__6;"
+
       ></a-entity>
       <a-sky color="lightblue"></a-sky>
       <a-entity 
       ply-model="src:SUNSET.ply"
       position="2.6 10.8 -1"
       rotation="0 -90 0"
+      <!-- Sunset dense by Kristoffer Zetterstrand 2003 -->
       ></a-entity>
       <a-entity 
       ply-model="src:camera0.1.ply"
@@ -58,7 +67,7 @@
       ply-model="src:CASINO 1.0-3-elavator.ply"
       position="0 0 0"
       rotation="-90 0 0"
-      animation="property:position; from:0 0 0; to:0 3.6 0; loop:true; dir:alternate;"
+      animation="property:position; from:0 0 0; to:0 3.6 0; loop:true; dur:3000; dir:alternate; easing:easeInOutSine;"
       ></a-entity>
       <a-entity 
       ply-model="src:CASINO 1.0-4-elavator door.ply"
